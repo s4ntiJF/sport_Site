@@ -1,0 +1,1501 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 65.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 5rem 0 3rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin: 5rem 0 5rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #00449d;
+}
+@media (min-width: 768px) {
+  .header .barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.header .links a {
+  color: #ffffff;
+}
+
+.img-logo {
+  width: 420px;
+}
+
+.lightGrey-header {
+  background-color: rgba(242, 242, 242, 0.9725490196);
+  padding: 2rem 0 2rem 0;
+}
+@media (min-width: 768px) {
+  .lightGrey-header .barra-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .lightGrey-header .informacion-buscador {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.lightGrey-header .informacion-buscador .text-visitar {
+  max-width: 2rem;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .lightGrey-header .contenido-search {
+    display: flex;
+  }
+}
+.lightGrey-header .sneakers {
+  width: 130px;
+}
+
+@media (min-width: 768px) {
+  .contenido-visitar {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+  }
+}
+
+.contenido {
+  position: relative;
+}
+.contenido input {
+  width: 400px;
+  padding: 14px;
+  border: 1px solid #9c9c9c;
+}
+.contenido i {
+  position: absolute;
+  font-size: 2rem;
+  padding: 14px;
+  transform: translateX(-110%);
+  cursor: pointer;
+}
+
+.iconos-header {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .iconos-header {
+    display: flex;
+    gap: 4rem;
+  }
+}
+.iconos-header .icono {
+  width: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-header2 {
+    display: flex;
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenido-productos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.contenido-productos p {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+}
+.contenido-productos i {
+  color: #4e4e4e;
+  font-size: 2rem;
+}
+
+.navegacion-principal {
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .navegacion-principal {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+.navegacion-principal p {
+  color: #9c9c9c;
+  text-align: center;
+}
+
+.navegacion-principal__link {
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+}
+
+.navegacion-principal__link:hover {
+  color: #00449d;
+}
+
+.title-colecciones {
+  text-transform: uppercase;
+}
+
+.title-offers {
+  text-transform: uppercase;
+}
+
+.title-ingresos {
+  text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .columns-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+  }
+}
+.columns-5 .prenda-deportiva {
+  margin-bottom: 1rem;
+}
+.columns-5 .prenda-deportiva .icono-producto {
+  width: 3rem;
+  left: -20rem;
+}
+.columns-5 .prenda-deportiva .prenda-deportiva__title {
+  font-size: 1.4rem;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 1rem 0 0 0;
+}
+.columns-5 .prenda-deportiva .prenda-deportiva__genero {
+  color: #9c9c9c;
+  line-height: 1.5;
+  margin: 0;
+}
+.columns-5 .prenda-deportiva .prenda-deportiva__precio {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.precios-home {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.precio-barato {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.precio-caro {
+  color: #9c9c9c;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.width {
+  width: 20rem;
+  text-align: center;
+}
+
+.two-balones {
+  display: block;
+}
+.two-balones .parte-inferior {
+  margin-bottom: 1rem;
+}
+
+.contenido-footer {
+  max-width: 1000px;
+}
+
+.footer {
+  margin-top: 5rem;
+}
+.footer .black-footer {
+  background-color: #000000;
+  padding: 1rem 0 1rem 0;
+}
+@media (min-width: 768px) {
+  .footer .company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer .company p {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.text-footer {
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .localizacion-footer {
+    display: flex;
+    align-items: center;
+  }
+}
+.localizacion-footer i {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.localizacion-footer p {
+  margin: 0;
+}
+
+.iconos-footer {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .iconos-footer {
+    display: flex;
+  }
+}
+
+.fa-brands {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 12px;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  color: #000000;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fa-brands-facebook,
+.fa-brands-twitter,
+.fa-brands-youtube,
+.fa-brands-instagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descuento {
+  font-size: 1.4rem;
+}
+
+.precios-rebajas {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.precios-rebajas .precio-principal {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.precios-rebajas .precio-rebaja {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.color-blue {
+  background-color: #00449d;
+}
+
+.ingresar-cuenta {
+  margin: 40px auto;
+  width: min(400px, 100%);
+  margin-top: 8rem;
+  padding: 3rem;
+}
+.ingresar-cuenta .campo {
+  margin-bottom: 3rem;
+}
+.ingresar-cuenta .campo input {
+  width: 100%;
+  padding: 12px;
+}
+.ingresar-cuenta .titulo-cuenta {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .alinear-content-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.alinear-content-form a {
+  color: #00449d;
+}
+
+@media (min-width: 768px) {
+  .flex-form {
+    display: flex;
+    gap: 5px;
+  }
+}
+.flex-form p {
+  margin: 0;
+}
+
+.btn-sesion {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #0062e2;
+  border: none;
+  color: #ffffff;
+  padding: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .informacion-miembro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.informacion-miembro a {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.mensajeError {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  color: #000000;
+}
+
+.crearCuenta {
+  margin: 0 auto;
+  width: min(370px, 100%);
+  padding: 2rem;
+}
+.crearCuenta .tituloCuenta-margin {
+  margin-top: 80px;
+}
+.crearCuenta .tituloCuenta-margin .titulo-crearCuenta {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0;
+}
+.crearCuenta .btn-facebook {
+  margin-top: 4rem;
+  background-color: #00449d;
+  padding: 12px;
+}
+@media (min-width: 768px) {
+  .crearCuenta .btn-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.crearCuenta .btn-facebook a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+.crearCuenta .btn-facebook .img-facebook {
+  width: 1rem;
+}
+.crearCuenta .group-campo {
+  margin-top: 2rem;
+}
+.crearCuenta .group-campo input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9c9c9c;
+  border-radius: 0.2rem;
+}
+.crearCuenta .group-campo select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9c9c9c;
+  border-radius: 0.2rem;
+}
+
+@media (min-width: 768px) {
+  .btns-radio div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+.btns-radio .radio-form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.group-terminosCondiciones div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.group-terminosCondiciones .terminosCondiciones {
+  color: #4e4e4e;
+  font-size: 1rem;
+}
+.group-terminosCondiciones .link-terminos {
+  color: #00449d;
+}
+
+.btn-registrar {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #0062e2;
+  border: none;
+  color: #ffffff;
+  padding: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.mensaje-error {
+  color: #ff0000;
+  font-size: 1.4rem;
+}
+.mensaje-error span {
+  font-size: 20px;
+}
+
+.restablecerPassword {
+  margin: 30px auto;
+  margin-top: 60px;
+  width: min(440px, 100%);
+  padding: 2rem;
+}
+.restablecerPassword .titulo-contraseña {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.restablecerPassword p {
+  word-spacing: 2px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.restablecerPassword .campo-email {
+  margin-top: 50px;
+}
+.restablecerPassword .campo-email input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #9c9c9c;
+  border-radius: 0.2rem;
+}
+.restablecerPassword .campo-email .mensajeError__margin {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  font-size: 1.4rem;
+}
+
+.btn-restablecerPassword {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #0062e2;
+  border: none;
+  color: #ffffff;
+  padding: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.title-zapatillas {
+  text-transform: uppercase;
+}
+
+.title-section {
+  color: #00449d;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .columns-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+  }
+}
+.columns-4 .zapatillas {
+  margin-bottom: 2rem;
+}
+.columns-4 .zapatillas .zapatillas__title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.columns-4 .zapatillas .zapatillas__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.columns-4 .zapatillas .zapatillas__genero {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.columns-4 .zapatillas .zapatillas__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.9;
+}
+
+.btn-add {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #00449d;
+  border: none;
+  padding: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.zapatillas:hover {
+  border: 1px solid #000000;
+}
+
+.title-clothes {
+  text-transform: uppercase;
+}
+
+.ropa {
+  margin-bottom: 2rem;
+}
+.ropa .ropa__title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.ropa .ropa__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.ropa .ropa__contenido .ropa__genero {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.ropa .ropa__contenido .ropa__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.9;
+}
+
+.two-pictures-leggins {
+  display: block;
+}
+.two-pictures-leggins img {
+  margin-bottom: 1rem;
+}
+
+.ropa:hover {
+  border: 1px solid #000000;
+}
+
+.title-accesories {
+  text-transform: uppercase;
+}
+
+.accesorios {
+  margin-bottom: 2rem;
+}
+.accesorios .accesorios__title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.accesorios .accesorios__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.accesorios .accesorios__contenido .accesorios__genero {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.accesorios .accesorios__contenido .accesorios__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.9;
+}
+
+.accesorios:hover {
+  border: 1px solid #000000;
+}
+
+.zapatillas-mujer {
+  margin-bottom: 2rem;
+}
+.zapatillas-mujer .zapatillas-mujer__title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.zapatillas-mujer .zapatillas-mujer__aventura {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.zapatillas-mujer .zapatillas-mujer__aventura .zapatillas-mujer__genero {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.zapatillas-mujer .zapatillas-mujer__aventura .zapatillas-mujer__precio {
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 1.9;
+}
+.zapatillas-mujer .zapatillas-mujer__contenido {
+  padding-left: 2rem;
+}
+
+.zapatillas-mujer:hover {
+  border: 1px solid #000000;
+}
+
+.ropa-mujer {
+  margin-bottom: 2rem;
+}
+.ropa-mujer .ropa-mujer__title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.ropa-mujer .ropa-mujer__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.ropa-mujer .ropa-mujer__genero {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.ropa-mujer .ropa-mujer__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.9;
+}
+.ropa-mujer .precio-caro-ropa {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.9;
+}
+.ropa-mujer .precio-barato-ropa {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.9;
+}
+
+.precios {
+  display: flex;
+  gap: 2rem;
+}
+
+.ropa-mujer:hover {
+  border: 1px solid #000000;
+}
+
+.accesorios-mujer {
+  margin-bottom: 2rem;
+}
+.accesorios-mujer .accesorios-mujer__title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.accesorios-mujer .accesorios-mujer__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.accesorios-mujer .accesorios-mujer__genero {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.accesorios-mujer .accesorios-mujer__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.9;
+}
+.accesorios-mujer .precio-caro-accesorios {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.9;
+}
+.accesorios-mujer .precio-barato-accesorios {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.9;
+}
+
+.accesorios-mujer:hover {
+  border: 1px solid #000000;
+}
+
+.precios-producto {
+  display: flex;
+  gap: 3rem;
+}
+.precios-producto p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.texto-shoes {
+  font-size: 1.4rem;
+  color: #4e4e4e;
+}
+
+.zapatillas-niño {
+  margin-bottom: 2rem;
+}
+.zapatillas-niño .zapatillas-niño__title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.zapatillas-niño .zapatillas-niño__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.zapatillas-niño .zapatillas-niño__contenido .zapatillas-niño__genero {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.zapatillas-niño .zapatillas-niño__contenido .zapatillas-niño__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.zapatillas-niño:hover {
+  border: 1px solid #000000;
+}
+
+.ropa-niño {
+  margin-bottom: 2rem;
+}
+.ropa-niño .ropa-niño__title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.ropa-niño .ropa-niño__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.ropa-niño .ropa-niño__contenido .ropa-niño__genero {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.ropa-niño .ropa-niño__contenido .ropa-niño__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.9;
+}
+
+.title-shoes-product {
+  max-width: 35rem;
+}
+
+.ropa-niño:hover {
+  border: 1px solid #000000;
+}
+
+.zapatos-niña {
+  margin-bottom: 2rem;
+}
+.zapatos-niña .zapatos-niña__title {
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+}
+.zapatos-niña .zapatos-niña__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.zapatos-niña .zapatos-niña__contenido .zapatos-niña__genero {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.zapatos-niña .zapatos-niña__contenido .zapatos-niña__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.9;
+}
+
+.zapatos-niña:hover {
+  border: 1px solid #000000;
+}
+
+.ropa-niña {
+  margin-bottom: 2rem;
+}
+.ropa-niña .ropa-niña__title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
+}
+.ropa-niña .ropa-niña__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.ropa-niña .ropa-niña__contenido .ropa-niña__genero {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.ropa-niña .ropa-niña__contenido .ropa-niña__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.9;
+}
+
+.ropa-niña:hover {
+  border: 1px solid #000000;
+}
+
+.zapatillas-correr-hombre {
+  margin-bottom: 4rem;
+}
+.zapatillas-correr-hombre .zapatillas-correr-hombre__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.zapatillas-correr-hombre .zapatillas-correr-hombre__contenido .zapatillas-correr-hombre__title {
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+}
+.zapatillas-correr-hombre .zapatillas-correr-hombre__contenido .zapatillas-correr-hombre__genero {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.zapatillas-correr-hombre .zapatillas-correr-hombre__contenido .zapatillas-correr-hombre__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.zapatillas-correr-hombre:hover {
+  border: 1px solid #000000;
+}
+
+.zapatillas-correr-mujer {
+  margin-bottom: 4rem;
+}
+.zapatillas-correr-mujer .zapatillas-correr-mujer__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.zapatillas-correr-mujer .zapatillas-correr-mujer__contenido .zapatillas-correr-mujer__title {
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+}
+.zapatillas-correr-mujer .zapatillas-correr-mujer__contenido .zapatillas-correr-mujer__genero {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.zapatillas-correr-mujer .zapatillas-correr-mujer__contenido .zapatillas-correr-mujer__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.zapatillas-correr-mujer:hover {
+  border: 1px solid #000000;
+}
+
+.zapatillas-urbano-niño {
+  margin-bottom: 4rem;
+}
+.zapatillas-urbano-niño .zapatillas-urbano-niño__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.zapatillas-urbano-niño .zapatillas-urbano-niño__contenido .zapatillas-urbano-niño__title {
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+}
+.zapatillas-urbano-niño .zapatillas-urbano-niño__contenido .zapatillas-urbano-niño__genero {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.zapatillas-urbano-niño .zapatillas-urbano-niño__contenido .zapatillas-urbano-niño__precio {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.zapatillas-urbano-niño:hover {
+  border: 1px solid #000000;
+}
+
+.natacion-niña {
+  margin-bottom: 4rem;
+}
+.natacion-niña .natacion-niña__contenido {
+  padding-left: 2rem;
+  margin: 4rem 0 0 0;
+}
+.natacion-niña .natacion-niña__contenido .natacion-niña__title {
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+}
+.natacion-niña .natacion-niña__contenido .natacion-niña__genero {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.natacion-niña .natacion-niña__contenido .natacion-niña__precio {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.natacion-niña:hover {
+  border: 1px solid #000000;
+}
+
+.columnas-2-producto {
+  margin: 5rem 0 0 0;
+}
+@media (min-width: 768px) {
+  .columnas-2-producto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+  }
+}
+@media (min-width: 768px) {
+  .columnas-2-producto .columns-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+}
+.columnas-2-producto .columns-imgs .bajar-item {
+  margin-bottom: 1rem;
+}
+.columnas-2-producto .columns-imgs .img-alinear-center {
+  display: flex;
+  justify-content: center;
+}
+.columnas-2-producto .img-item {
+  width: 100%;
+}
+
+.producto-shirt {
+  max-width: 40rem;
+}
+
+.title-size-producto {
+  margin: 2rem 0 0 0;
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+.genero-producto {
+  font-size: 1.5rem;
+}
+
+.detalles-colores {
+  margin: 2rem 0 0 0;
+}
+.detalles-colores .title-color {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 0;
+}
+.detalles-colores .img-producto {
+  margin: 2rem 0 0 0;
+  width: 8rem;
+}
+
+.img-producto {
+  border: 1px solid #9c9c9c;
+  width: 10rem;
+}
+
+.title-talla {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 2rem 0 0 0;
+}
+
+.items-table {
+  margin: 3rem 0 0 0;
+}
+.items-table .table-size-link {
+  border: 1px solid #9c9c9c;
+  padding: 1rem 4rem;
+  background-color: #ffffff;
+  font-size: 1rem;
+}
+.items-table .table-size-link a {
+  color: #000000;
+}
+.items-table .table-size-number {
+  font-size: 1rem;
+  padding: 1rem 4rem;
+  background-color: rgba(242, 242, 242, 0.9725490196);
+  border: 1px solid #4e4e4e;
+  color: #4e4e4e;
+}
+
+.texto-tallas {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #4e4e4e;
+}
+
+.table-size-link:hover {
+  background-color: #00449d;
+  border: 1px solid #00449d;
+  cursor: pointer;
+}
+
+.form {
+  margin: 5rem 0 0 0;
+}
+.form .flex {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.form .cantidades {
+  width: 10rem;
+  text-align: center;
+  border: 1px solid #9c9c9c;
+  border-radius: 0.2rem;
+}
+
+.title-cantidad {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.item-li {
+  max-width: 40rem;
+}
+
+.tallas-no-diponibles {
+  font-size: 1.2rem;
+  color: #4e4e4e;
+}
+
+.btn-add:hover {
+  background-color: #4e4e4e;
+  cursor: pointer;
+}
+
+.title-shoes {
+  max-width: 40rem;
+}
+
+.precio-producto {
+  font-size: 1.5rem;
+}

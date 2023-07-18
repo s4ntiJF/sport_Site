@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa - Marathon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="build/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <form class="ingresar-cuenta">
+        <h1 class="titulo-cuenta">Ingresa a tu cuenta</h1>
+        <div class="campo input-control correo campo-obligatorio">
+            <input type="email" placeholder="Correo" class="campo-input" id="correo" class="campo-obligatorio">
+            <p class="mensajeError"></p>
+        </div>
+        <div class="campo input-control password campo-obligatorio">
+            <input type="password" placeholder="Contraseña" class="campo-input" id="password" class="campo-obligatorio">
+            <p class="mensajeError"></p>
+        </div>
+        <div class="alinear-content-form">
+            <div class="flex-form">
+                <input type="checkbox">
+                <p>Mantenerme Conectado</p>
+            </div>
+            <a href="restablecer-contraseña.html">¿Olvidaste tu contraseña?</a>
+        </div>
+        <input type="submit" value="Iniciar Sesión" class="btn-sesion">
+        <div class="informacion-miembro">
+            <p>¿No eres miembro?</p>
+            <a href="registrarse.html">Regístrate ahora</a>
+        </div>
+        <div id="errorCuenta"></div>
+    </form>
+    
+    <script src="build/js/formulario-iniciar-sesion.js"></script>
+    <script src="build/js/formulario-registrarse.js"></script>
+    <script src="build/js/formulario-restablecer-contraseña.js"></script>
+    <script src="build/js/menu-responsive.js"></script>
+</body>
+</html>

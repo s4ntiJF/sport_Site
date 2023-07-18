@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa - Marathon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="build/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="https://media.marathon.store/images/hde/h28/h00/8926515298334.png" alt="Logotipo Marathon" loading="lazy" class="img-logo">
+                </a>
+                <div class="links">
+                    <a href="iniciar-sesion.html" class="link-sesion">Iniciar Sesión /</a>
+                    <a href="registrarse.html" class="link-registrase">Regístrate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="lightGrey-header">
+        <div class="contenedor">
+            <div class="barra-header">
+                <div class="informacion-buscador">
+                    <form class="contenido">
+                        <input type="search" id="search" placeholder="Estoy buscando">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                    <div class="contenido-visitar">
+                        <p class="text-visitar">Visita también:</p>
+                        <img src="https://media.marathon.store/images/h28/h8b/h00/9534967513118.png" alt="sneakers" class="sneakers">
+                    </div>
+                </div>
+                <div class="contenido-header2">
+                    <ul class="iconos-header">
+                        <li><a href="#" title="Asistencia"><img src="https://media.marathon.store/images/h2f/hf2/h00/8926515429406.png" alt="asistencia" class="icono"></a></li>
+                        <li><a href="#" title="Buscar Tienda"><img src="https://media.marathon.store/images/hae/hcb/h00/8926515626014.png" alt="buscar tienda" class="icono"></a></li>
+                        <li><a href="#" title="Bandera Ecuador"><img src="https://media.marathon.store/images/h39/h24/h00/8926515822622.png" alt="bandera Ecuador" class="icono"></a></li>
+                    </ul>
+                    <div class="contenido-productos">
+                        <p>( 0 Productos )</p>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+            <nav class="navegacion-principal">
+                <a href="seccion-hombre.html" class="navegacion-principal__link">Hombre</a>
+                <p>|</p>
+                <a href="seccion-mujer.html" class="navegacion-principal__link">Mujer</a>
+                <p>|</p>
+                <a href="seccion-niños.html" class="navegacion-principal__link">Niños</a>
+                <p>|</p>
+                <a href="deportes.html" class="navegacion-principal__link">Deportes</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="contenedor">
+        <form class="crearCuenta" method="get">
+            <div class="tituloCuenta-margin">
+                <h1 class="titulo-crearCuenta">Crear una cuenta</h1>
+            </div>
+
+            <div class="btn-facebook">
+                <img src="https://www.marathon.store/_ui/addons/facebookaddon/responsive/common/images/facebook-logo.png" alt="crear una cuenta con facebook" class="img-facebook">
+                <a href="#" class="crear-cuentaFacebook">Crear una cuenta con facebook</a>
+            </div>
+
+            <div class="group-campo nombres input-container input">
+                <input type="text" id="nombres" placeholder="Nombres" class="input">
+                <p class="mensaje-error"></p>
+            </div>
+            <div class="group-campo apellidos input-container input">
+                <input type="text" id="apellidos" placeholder="Apellidos" class="input">
+                <p class="mensaje-error"></p>
+            </div>
+            <div class="group-campo tipoDocumento input-container input">
+                <select id="tipoDocumento" class="input">Tipo de documento
+                    <option value="" selected disabled>Tipo de documento</option>
+                    <option value="C.I">C.I</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select>
+                <p class="mensaje-error"></p>
+            </div>
+            <div class="btns-radio genero input-container">
+                <div>
+                    <div class="radio-form">
+                        <input type="radio" id="genero" name="sexo" value="hombre">
+                        <label for="hombre">Hombre</label>
+                    </div>
+                    <div class="radio-form">
+                        <input type="radio" id="genero" name="sexo" value="mujer">
+                        <label for="mujer">Mujer</label>
+                    </div>
+                    <div class="radio-form">
+                        <input type="radio" id="genero" name="sexo" value="otros">
+                        <label for="otros">Otros</label>
+                    </div>
+                </div>
+                <p class="mensaje-error"></p>
+            </div>
+            <div class="group-campo email input-container" class="input">
+                <input type="email" id="email" placeholder="Email" class="input">
+                <p class="mensaje-error"></p>
+            </div>
+            <div class="group-campo password1 input-container input">
+                <input type="password" id="password1" placeholder="Contraseña" class="input">
+                <p class="mensaje-error"></p>
+            </div>
+            <div class="group-campo password2 input-container input">
+                <input type="password" id="password2" placeholder="Confirmar contraseña" class="input">
+                <p class="mensaje-error"></p>
+            </div>
+            <div class="group-terminosCondiciones checkbox input">
+                <div>
+                    <input type="checkbox" id="checkbox" class="input">
+                    <p class="terminosCondiciones">He leido y acepto los <a href="#" class="link-terminos">Términos y Condiciones</a> del uso del sitio web.</p>
+                </div>
+                <p class="mensaje-error"></p>
+            </div>
+            <input type="submit" value="Registrarse" class="btn-registrar">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="black-footer">
+            <div class="contenedor contenido-footer">
+                <div class="company">
+                    <div>
+                        <div class="localizacion-footer">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>Ecuador 2023 marathon Todos los derechos reservados</p>
+                        </div>
+                    </div>
+                    <ul class="iconos-footer">
+                        <li><a href="#"><i class="fa-brands fa-brands-facebook fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-brands-twitter fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-brands-youtube fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-brands-instagram fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="build/js/formulario-iniciar-sesion.js"></script>
+    <script src="build/js/formulario-registrarse.js"></script>
+    <script src="build/js/formulario-restablecer-contraseña.js"></script>
+    <script src="build/js/menu-responsive.js"></script>
+</body>
+</html>
